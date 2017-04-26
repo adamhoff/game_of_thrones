@@ -1,0 +1,8 @@
+<h1>Here are the characters</h1>
+<% @characters.each do |character| %>
+  <div>
+    <img src="<%= character.img_url %>"/>
+    <h4><%= character.name %></h4>
+    <h5><%= link_to character.house.name, character %> house</h5>
+  </div>
+<% end %>
