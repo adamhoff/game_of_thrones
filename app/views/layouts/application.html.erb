@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>GameOfThrones</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>GameOfThrones</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <nav>
-      <h1>Game of Thrones</h1>
-      <h2><%= link_to "View Houses", houses_path %> | <%= link_to "View Characters", characters_path %></h2>
+<body>
+  <nav class="header">
+    <h6 ><%= link_to "View Houses", houses_path %> | <%= link_to "View Characters", characters_path %></h6>
+  </nav>
 
-    </nav>
-
-    <%= yield %>
-  </body>
+  <%= yield %>
+</body>
 </html>

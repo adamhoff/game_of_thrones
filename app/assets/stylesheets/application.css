@@ -26,5 +26,25 @@
 
  body{
    font-family: 'thrones';
-   display: inline;
- }
+   background: darkcyan;
+   color: white;
+}
+div{
+  float: left;
+  margin: 20px;
+  text-align: center;
+}
+a{
+  text-decoration: underline;
+  color: peachpuff;
+}
+img{
+  width: 200px;
+  height: 300px;
+}
+.header{
+  position: sticky;
+}
+h6 a{
+  text-decoration: none;
+}
